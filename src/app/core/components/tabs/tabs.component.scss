@@ -1,7 +1,9 @@
+@use "./../../../../assets/styles/variables.scss";
+
 #container{
     display: flex; //para que los iconos del div container se vean unos al lado del otro
     justify-content: space-around ; //para que haya espacio entre los iconos
-    background-color: rgb(250, 235, 215);
+    background-color: rgb(0,0,0,0.1);
     border-radius: 10 px 10 px 0 0;
     height: 80px;
     overflow: hidden;
@@ -21,6 +23,5 @@
 }
 
 .seleccionado{
-    background-color: rgb(244, 211, 168);
-
+    background-color: variables.$color-principal;
 }
