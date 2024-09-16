@@ -32,6 +32,7 @@ body {
 	line-height: 1;
     width: 100vw; //vw -> viewport with osea el 100 ancho de la pantalla
     overflow-x: hidden; //para que nunca se muestre nada que se salga del costado del ancho
+	
 }
 ol, ul {
 	list-style: none;
@@ -47,4 +48,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+app-root{
+	min-height: 100svh; 
+	display: flex;
+	flex-direction: column;
 }

@@ -1,8 +1,26 @@
 #container{
     display: flex; //para que los iconos del div container se vean unos al lado del otro
     justify-content: space-around ; //para que haya espacio entre los iconos
+    background-color: rgb(250, 235, 215);
+    border-radius: 10 px 10 px 0 0;
+    height: 80px;
+    overflow: hidden;
 }
 
 .tab{
    flex:1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   svg{
+    display: block;
+    margin:auto;
+    transition: 200ms ease-in-out;
+   }
+   transition: 200ms ease-in-out;
+}
+
+.seleccionado{
+    background-color: rgb(244, 211, 168);
+
 }
