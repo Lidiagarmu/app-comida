@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, effect, inject, signal } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
 
 @Component({
@@ -9,5 +9,17 @@ import { HeaderService } from '../../services/header.service';
 export class HeaderComponent {
 
   headerService = inject(HeaderService);
+  claseAplicada = signal("");
+ 
 
+  esconderTitulo = effect(()=> {
+    if(this.headerService.titulo()){
+      this.claseAplicada.set("fade-out");
+    }
+  },{allowSignalWrites: true});
+
+
+  
 }
+
+

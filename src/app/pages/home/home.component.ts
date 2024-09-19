@@ -6,16 +6,19 @@ import { HeaderService } from '../../core/services/header.service';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
+ 
 
 //ngOnInit lo que hace es ejecutarse cada vez que se carga este componente en este caso
 
   headerService = inject(HeaderService);
 
   ngOnInit(): void {
-    this.headerService.titulo.set("Home")
+    this.headerService.titulo.set("Home");
+    this.headerService.extendido.set(true); 
   }
 
+  
 
 
 }
