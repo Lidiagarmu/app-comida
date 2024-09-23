@@ -2,6 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { HeaderService } from '../../core/services/header.service';
 import { CategoriasService } from '../../core/services/categorias.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,7 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.headerService.titulo.set("Home");
     this.headerService.extendido.set(true); 
-    this.categoriasService.getAll;
+    this.categoriasService.getAll();
   }
 
   
