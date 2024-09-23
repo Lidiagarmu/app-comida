@@ -8,12 +8,12 @@ import { HeaderComponent } from './core/components/header/header.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     TabsComponent,
-    HeaderComponent,
-    
+    HeaderComponent
   ],
   
   imports: [

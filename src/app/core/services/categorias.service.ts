@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Categoria } from '../interfaces/categorias';
 
 
 
@@ -12,10 +13,10 @@ export class CategoriasService {
 
   constructor() { }
 
-  async getAll(){
+  async getAll() : Promise<Categoria[]>{
     const res = await fetch("./../../../assets/data/database.json");
-    
-    console.log(res);
+    const resJson = await res.json();
+    return resJson;
     
   
   }

@@ -19,7 +19,7 @@ const routes: Routes = [
 
   },
   {
-    path: "rubro",
+    path: "categoria/:id", //para que categoria sea cualquier cosa le ponemos /:id  
     component: RubroComponent
 
   },
