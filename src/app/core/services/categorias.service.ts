@@ -17,8 +17,17 @@ export class CategoriasService {
     const res = await fetch("./../../../assets/data/database.json");
     const resJson = await res.json();
     return resJson;
-    
-  
   }
+
+    //metodo nuevo para traer el nombre de la categoria arriba
+
+    async  getById(id:number):Promise<Categoria | undefined >{
+
+      const res = await fetch("./../../../assets/data/database.json"); 
+      const resJson:Categoria[] = await res.json(); 
+      const categoria = resJson.find(categoria => categoria.id === id) ;
+      if (categoria) return categoria; 
+      return 
+    }
 
 }

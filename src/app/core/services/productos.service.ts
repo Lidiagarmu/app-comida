@@ -22,4 +22,6 @@ export class ProductosService {
     if (productos) return productos; //4. si los prodcutos existen devuelve los productos 
     return []; //si noo, array vacio
   }
+
+
 }
