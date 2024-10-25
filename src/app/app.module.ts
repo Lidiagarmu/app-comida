@@ -13,7 +13,8 @@ import { HeaderComponent } from './core/components/header/header.component';
   declarations: [
     AppComponent,
     TabsComponent,
-    HeaderComponent
+    HeaderComponent,
+
   ],
   
   imports: [
